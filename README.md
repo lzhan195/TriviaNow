@@ -1,24 +1,68 @@
 # TriviaNow
-A Quiz Gaming System allows users to
 
-•	View a list of Questions
+TriviaNow is a web application that allows users to play trivia games and test their knowledge across various categories. This repository contains the source code and project files for TriviaNow.
 
-•	Add new Questions o Ask for details of each Question. Each question has multiple answer choices that need to be created and the correct one should be marked appropriately within the Question along with the feedback
+## Features
 
-•	Edit existing Questions
+- User registration and authentication
+- Multiple trivia categories to choose from
+- Randomized questions for each game session
+- Score tracking and leaderboard
+- Timed gameplay
+- Responsive design for different screen sizes
 
-•	Delete a Question
+## Installation
 
-•	Search all Questions’ text and display a list of all matching Questions
+To run TriviaNow locally, follow these steps:
 
-•	Implement data persistence: Users should be able to load a list of questions from a data file and save the questions to data file (Open/Save functionality)
+1. Clone this repository to your local machine:
 
-•	Play a 1-person game of trivia that presents the user with 3 random but unique questions from the Question Pool. It should finally display the total score out of 3 to the user
+```bash
+git clone https://github.com/lzhan195/TriviaNow.git
+```
 
-•	Demonstrate use of media o Play a sound indicating the start/end of the game
+2. Navigate to the project directory:
 
-• Show an appropriate graphic suitable to the application
+```bash
+cd TriviaNow
+```
 
-• Provide the ability to cleanly exit the application
+3. Install the required dependencies:
 
+```bash
+npm install
+```
 
+4. Configure the environment variables:
+
+- Create a `.env` file in the root directory.
+- Set the following variables in the `.env` file:
+  - `DB_HOST`: The hostname of your database server
+  - `DB_PORT`: The port number of your database server
+  - `DB_NAME`: The name of the database
+  - `DB_USER`: The username for connecting to the database
+  - `DB_PASSWORD`: The password for connecting to the database
+  - `JWT_SECRET`: A secret key for JWT authentication
+
+5. Start the development server:
+
+```bash
+npm start
+```
+
+6. Open your web browser and access `http://localhost:3000` to view TriviaNow.
+
+## Technologies Used
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- Passport.js
+- JWT
+- HTML/CSS
+- Bootstrap
+
+## License
+
+TriviaNow is licensed under the [MIT License](LICENSE).
